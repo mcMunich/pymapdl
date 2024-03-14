@@ -245,7 +245,7 @@ def convert_script(
     >>> in_file = examples.vmfiles['vm10']
     >>> filename = os.path.basename(in_file)
     >>> out_file = 'out_' + filename.replace('.dat', '.py')
-    >>> output = convert_script(file, out_file, line_ending='\\n')
+    >>> output = convert_script(in_file, out_file, line_ending='\\n')
     >>> mapdl = launch_mapdl()
     >>> with open(out_file, 'r') as fid:
     ...     cmds = fid.read()
